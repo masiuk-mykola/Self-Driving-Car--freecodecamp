@@ -38,3 +38,11 @@ function polysIntersect(poly1, poly2) {
   }
   return false;
 }
+
+function getRandomHexColor() {
+  const randomColorNumber = Math.floor(Math.random() * 16777215);
+
+  const hexColor = `#${randomColorNumber.toString(16).padStart(6, "0")}`;
+
+  return hexColor;
+}
