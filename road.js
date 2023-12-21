@@ -8,7 +8,6 @@ class Road {
     this.right = x + width / 2;
 
     const infinity = 1000000;
-
     this.top = -infinity;
     this.bottom = infinity;
 
@@ -35,7 +34,6 @@ class Road {
       const x = lerp(this.left, this.right, i / this.laneCount);
 
       ctx.setLineDash([20, 20]);
-
       ctx.beginPath();
       ctx.moveTo(x, this.top);
       ctx.lineTo(x, this.bottom);
